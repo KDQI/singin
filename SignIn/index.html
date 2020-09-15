@@ -9,23 +9,21 @@
 <link rel="stylesheet" href="style.css"> 
     
 </head>
-<body>
-
-    
-    <form action="action_page.php" method="post">
+<body class="text-center">
+    <form class="form-signin">
         <div class="container">
-            <h1> Kirjautumissivu </h1>
-          <input type="text" placeholder="Käyttäjänimi" name="uname" required> <br>
-      
-         
-          <input type="password" placeholder="Salasana" name="psw" required> <br>
-      
+         <h1> Kirjautumissivu </h1>
+          <input type="text" id="uname" class="from-control" placeholder="Käyttäjänimi"  required> <br>       
+          <input type="password" id="psw" class="from-control" placeholder="Salasana" required> <br>
           <button type="submit">Login</button> <br>
           <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
+            <input type="checkbox" checked="checked" id="remember"> Remember me
           </label>
         </div>
-      </form>
-    
+
+        <p id="emailTulos" style="color: brown;"></p>
+        <p id="salasanaTulos" style="color: brown;" ></p> 
+      </form>  
+       <script src="app.js"></script> 
 </body>
 </html>
