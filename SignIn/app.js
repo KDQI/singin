@@ -1,9 +1,10 @@
 "use strict"
 
-const submit = document.querySelector("uname").value;
+const submit = document.querySelector("#Pista");
+
 
 submit.onclick = function() {
-        const uname = document.querySelector("uname").value;
+        const uname = document.querySelector("#Nimi").value;
         const psw = document.querySelector("#psw").value;
         const emailTulos = document.querySelector("#emailTulos");
         const salasanaTulos = document.querySelector("#salasanaTulos");
